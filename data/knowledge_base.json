@@ -1,0 +1,42 @@
+[
+  {
+    "kb_id": "KB-001",
+    "title": "VPN connection troubleshooting",
+    "category": "VPN",
+    "synthetic_summary": "Confirm internet connectivity; inspect VPN protocol and network transition behavior.",
+    "official_reference_url": "https://learn.microsoft.com/en-us/troubleshoot/windows-client/networking/l2tp-ipsec-vpn-client-connection-issue",
+    "source_type": "synthetic_summary_linked_to_public_reference"
+  },
+  {
+    "kb_id": "KB-002",
+    "title": "Microsoft Entra sign-in diagnostics",
+    "category": "MFA",
+    "synthetic_summary": "Use sign-in diagnostic evidence and error codes to investigate authentication failures.",
+    "official_reference_url": "https://learn.microsoft.com/en-us/entra/identity/monitoring-health/howto-use-sign-in-diagnostics",
+    "source_type": "synthetic_summary_linked_to_public_reference"
+  },
+  {
+    "kb_id": "KB-003",
+    "title": "Outlook send and receive issues",
+    "category": "Outlook",
+    "synthetic_summary": "Check connectivity, offline status, oversized attachments and add-ins.",
+    "official_reference_url": "https://support.microsoft.com/en-us/outlook/i-can-t-send-or-receive-messages-in-outlook",
+    "source_type": "synthetic_summary_linked_to_public_reference"
+  },
+  {
+    "kb_id": "KB-004",
+    "title": "Printer offline troubleshooting",
+    "category": "Printer",
+    "synthetic_summary": "Run Windows printer troubleshooter, check network connectivity and reinstall as needed.",
+    "official_reference_url": "https://support.microsoft.com/en-us/windows/hardware/printer/troubleshooting-offline-printer-problems-in-windows",
+    "source_type": "synthetic_summary_linked_to_public_reference"
+  },
+  {
+    "kb_id": "KB-005",
+    "title": "Microsoft 365 MFA setup",
+    "category": "MFA",
+    "synthetic_summary": "Authentication methods can be changed according to organizational policies; lost phone recovery may require IT help.",
+    "official_reference_url": "https://support.microsoft.com/en-us/office/account-management/set-up-your-microsoft-365-sign-in-for-multi-factor-authentication",
+    "source_type": "synthetic_summary_linked_to_public_reference"
+  }
+]

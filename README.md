@@ -74,3 +74,11 @@ Restart Streamlit and start a new conversation after switching. To return to the
 BM25 filters common conversational words while preserving negations, error codes and record IDs. Hybrid combines up to 15 candidates from each method with equal-weight reciprocal rank fusion (constant 60). The final five results contain at most two chunks from each parent article, leaving room for other records. Explicitly requested incident, article or chunk IDs are matched against metadata and prioritized; an unknown ID is never replaced by a partial ID match. A known article ID alone does not establish which passage answers a question, so the assistant still checks the retrieved evidence. Citation validation, clarification and human-escalation rules remain in place.
 
 These simple settings are named constants at the top of `src/retrieval.py`. They affect ranking only; no re-ingestion is needed. Restart Streamlit and start a new conversation to use the updated retriever.
+
+## Evaluation dashboard
+
+Open **Evaluation** in the sidebar to compare semantic, BM25 and hybrid retrieval against the current index. Choose the main benchmark (21 answerable questions) or the held-out benchmark (10 questions), then click **Run evaluation**. Each run performs fresh searches using OpenAI embeddings and stores results only in the browser session. Changing filters or inspecting another method does not rerun searches. No saved result reports are loaded; an optional download exports the completed session result.
+
+The method comparison table shows Hit@5 (an expected parent source appears in the top five chunks) and MRR@5 (higher scores reward earlier expected sources). The question results table shows the expected sources, ranked retrieved chunk IDs and hit or miss outcome. These metrics measure retrieval, not final-answer correctness; expected-source labels are candidate annotations, and a parent-article hit does not prove passage relevance.
+
+Benchmark inputs live in `evals/eval_questions.csv`, `evals/kb_questions.csv` and `evals/hybrid_holdout.csv`. The page is implemented in `pages/1_Evaluation.py`; fresh evaluation and scoring are handled by `src/session_evaluation.py`. Tests, generated reports and local development utilities remain excluded from Git. Rebuild the index after changing the corpus or chunk settings before evaluating it.

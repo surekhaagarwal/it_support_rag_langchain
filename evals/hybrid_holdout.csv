@@ -1,0 +1,11 @@
+question_id,category,question,answerable,gold_ticket_ids
+H01,exact,Please summarize inc-1027.,true,INC-1027
+H02,semantic,My VPN session ends every time I switch from the house wireless network to tethering on my phone.,true,INC-1001;INC-1002;KB-007
+H03,semantic,Outlook is stuck offline and will not download messages. What helped previously?,true,INC-1017;INC-1018
+H04,exact,The L2TP VPN client displays 789 during connection. What did the old incidents record?,true,INC-1003;INC-1004;KB-007
+H05,semantic,I changed my password yesterday and now the VPN sign-in fails. What did support do?,true,INC-1005;INC-1006
+H06,semantic,The print queue never empties although jobs have been sent. What does the incident history say?,true,INC-1027;INC-1028
+H07,kb_wifi,My usual wireless network is absent from the list. What basic observations should I collect?,true,KB-006
+H08,kb_vpn,Which sensitive information must I leave out of a VPN support handoff?,true,KB-007
+H09,semantic,Every successful SSO sign-in sends me straight back to the login page.,true,INC-1035;INC-1036
+H10,semantic,The reporting dashboard is inaccessible after I successfully log in.,true,INC-1037;INC-1038

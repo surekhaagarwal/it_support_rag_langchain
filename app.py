@@ -7,6 +7,19 @@ from src.ingest import ROOT
 from src.assistant import Assistant
 load_dotenv(ROOT/'.env')
 st.set_page_config(page_title='IT Support RAG Assistant', page_icon='🛠️', layout='wide')
+# Give the evaluation dashboard explicit navigation labels. The chat
+# continues below; evaluation renders its own page and stops before the chat UI.
+if (ROOT / 'pages/1_Evaluation.py').exists():
+    def chat_page():
+        """The default chat page is rendered below the navigation."""
+
+    page = st.navigation([
+        st.Page(chat_page, title='Chat', icon='💬', default=True),
+        st.Page('pages/1_Evaluation.py', title='Evaluation', icon='📊'),
+    ])
+    page.run()
+    if page.title != 'Chat':
+        st.stop()
 # A local decorative SVG keeps the banner sharp without external image requests.
 banner_art = b64encode((ROOT / 'assets/support-banner.svg').read_bytes()).decode('ascii')
 st.markdown("""

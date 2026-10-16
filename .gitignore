@@ -7,9 +7,12 @@ __pycache__/
 *.py[cod]
 .DS_Store
 
-# Local tests, evaluation data/results and development-only utilities
+# Local tests, evaluation results and development-only utilities
 /tests/
-/evals/
+/evals/*
+!/evals/eval_questions.csv
+!/evals/kb_questions.csv
+!/evals/hybrid_holdout.csv
 /src/test_search.py
 /src/evaluate.py
 /src/evaluate_hybrid.py

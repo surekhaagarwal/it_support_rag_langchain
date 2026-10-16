@@ -1,0 +1,18 @@
+[
+  {
+    "kb_id": "KB-006",
+    "title": "Wi-Fi connectivity: symptom-based helpdesk triage",
+    "category": "Wi-Fi",
+    "content_file": "kb_articles/KB-006-wifi-connectivity.md",
+    "official_reference_url": "https://support.microsoft.com/en-us/windows/experience/connectivity-networking/fix-wi-fi-connection-issues-in-windows",
+    "source_type": "synthetic_training_article_with_public_background_reference"
+  },
+  {
+    "kb_id": "KB-007",
+    "title": "VPN troubleshooting: network handoff, L2TP errors and internal access",
+    "category": "VPN",
+    "content_file": "kb_articles/KB-007-vpn-troubleshooting.md",
+    "official_reference_url": "https://learn.microsoft.com/en-us/troubleshoot/windows-client/networking/l2tp-ipsec-vpn-client-connection-issue",
+    "source_type": "synthetic_training_article_with_public_background_reference"
+  }
+]

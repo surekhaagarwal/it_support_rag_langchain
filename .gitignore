@@ -6,3 +6,12 @@ chroma_db/
 __pycache__/
 *.py[cod]
 .DS_Store
+
+# Local tests, evaluation data/results and development-only utilities
+/tests/
+/evals/
+/src/test_search.py
+/src/evaluate.py
+/src/evaluate_hybrid.py
+/src/compare_search.py
+/src/inspect_index.py
